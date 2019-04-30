@@ -10,6 +10,6 @@ def hello():
     return "Hello World! lalalala"
 
 @app.route("/api")
-def jsonify():
+def create_json():
 	dic={'winter':'invierno','summer':'verano'}
 	return jsonify(dic)
