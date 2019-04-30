@@ -12,4 +12,4 @@ def hello():
 @app.route("/")
 def jsonify():
 	dic={'winter':'invierno','summer':'verano'}
-	return jsonify(data)
+	return jsonify(dic)
