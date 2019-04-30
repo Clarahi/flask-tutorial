@@ -9,7 +9,7 @@ app.config["DEBUG"] = True
 def hello():
     return "Hello World! lalalala"
 
-@app.route("/")
+@app.route("/api")
 def jsonify():
 	dic={'winter':'invierno','summer':'verano'}
 	return jsonify(dic)
