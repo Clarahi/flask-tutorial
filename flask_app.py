@@ -9,7 +9,11 @@ app.config["DEBUG"] = True
 def hello():
     return "Hello World! lalalala"
 
+#@app.route("/api")
+#def create_json():
+#	dic={'winter':'invierno','summer':'verano'}
+#	return jsonify(dic)
+
 @app.route("/api")
 def create_json():
-	dic={'winter':'invierno','summer':'verano'}
-	return jsonify(dic)
+	return pd.DataFrame({'english':['winter','summer'],'spanish':['invierno','verano']}).to_json(orient='records')
